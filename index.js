@@ -1,12 +1,12 @@
 let colorsArr = [];
 
-async function generateColorScheme() {
+ function generateColorScheme() {
 	const seedColor = document.getElementById('seed-color').value;
 	const scheme = document.getElementById('scheme').value;
 
 	const hexColor = seedColor.replace('#', '');
 
-	await fetch(
+	 fetch(
 		`https://www.thecolorapi.com/scheme?hex=${hexColor}&mode=${scheme.toLowerCase()}`
 	)
 		.then((res) => res.json())
