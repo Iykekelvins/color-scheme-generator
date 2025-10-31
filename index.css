@@ -61,6 +61,11 @@ header {
 	font-family: inherit;
 	height: 2.625rem;
 	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.get-color-btn:hover {
+	background-color: #354256;
 }
 
 .color-palette {
